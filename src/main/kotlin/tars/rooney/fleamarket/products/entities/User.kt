@@ -11,13 +11,10 @@ import javax.persistence.Table
 @Table(name = "users")
 class User(
     @Id
-    @GeneratedValue
-    val userNum: Long,
-    val name: String,
-    val nickName: String,
     val id: String,
     val pw: String,
+    val name: String,
+    val nickName: String,
     val phone: String,
-    val birthday: LocalDate,
     val createdDate: LocalDateTime = LocalDateTime.now()
     )

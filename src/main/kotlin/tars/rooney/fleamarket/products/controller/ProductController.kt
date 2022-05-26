@@ -1,4 +1,4 @@
-package tars.rooney.fleamarket.products
+package tars.rooney.fleamarket.products.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -24,7 +24,7 @@ class ProductController(
 
 
     @GetMapping("products/{id}")
-    fun findById(@PathVariable id: Long): Product {
+    fun findById(@PathVariable id: Long): Product? {
 
 
 
