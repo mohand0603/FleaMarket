@@ -27,12 +27,13 @@ dependencies {
 	runtimeOnly("mysql:mysql-connector-java")
 	implementation("commons-dbcp:commons-dbcp:1.4")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("io.jsonwebtoken:jjwt:0.9.1")
 }
 
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "17"
+		jvmTarget = "11"
 	}
 }
 

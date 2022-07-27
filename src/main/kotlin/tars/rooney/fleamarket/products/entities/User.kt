@@ -16,5 +16,12 @@ class User(
     val name: String,
     val nickName: String,
     val phone: String,
-    val createdDate: LocalDateTime = LocalDateTime.now()
-    )
+    val createdDate: LocalDateTime = LocalDateTime.now(),
+    var state: STATE = STATE.NO
+) {
+    enum class STATE {
+        NO,
+        YES
+    }
+}
+
