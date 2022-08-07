@@ -62,7 +62,11 @@ class ProductController(
                 data = null
             )
 
-        productService.buyProduct(buyProductDto)
+        return ResponseMessage(
+            result = true,
+            message = "test",
+            data = null
+        )
 
     }
 
